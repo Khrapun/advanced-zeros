@@ -35,7 +35,7 @@ module.exports = function getZerosCount(number, base) {
       }
     }    
   }
-  for(let step2 = 1; Math.trunc(number / Math.pow(osn, step2)) > 1; step2++) {
+  for(let step2 = 1; Math.trunc(number / Math.pow(osn, step2)) >= 1; step2++) {
     zeros += Math.trunc(number / Math.pow(osn, step2));
   }
   let result = Math.trunc(zeros / step)
